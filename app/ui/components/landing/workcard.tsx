@@ -21,7 +21,7 @@ export default function WorkCard({
         {work.tags.map((tag, tIndex) => (
           <span
             key={`work-${index}-tag-${tIndex}`}
-            className={`inline-block text-sm px-3 py-2 rounded-lg mb-4 mr-4`}
+            className={`${mulish.className} inline-block text-sm px-3 py-2 rounded-lg mb-4 mr-4`}
             style={{ backgroundColor: tag.bgColor, color: tag.color }}
           >
             {tag.tagName}

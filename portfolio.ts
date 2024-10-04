@@ -6,7 +6,7 @@ export const myWorks: worksSectionType[] = [
         label: ["Schoolworkspro", "Design Systems: One", "Component at A", "Time"],
         year: "2024",
         logo: "/img/works/swp.png",
-        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/", isActive: true,},
+        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/schoolworkspro", isActive: true,},
         bgColor: "#EDF0F9"
     },
     {
@@ -14,7 +14,7 @@ export const myWorks: worksSectionType[] = [
         label: ["Effortless", "eDiscovery and", "Case Management", "with CaseConnect"],
         year: "2022-23",
         logo: "/img/works/ediscovery.png",
-        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/", isActive: true,},
+        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/caseconnect", isActive: true,},
         bgColor: "#eaeaea"
     },
     {
@@ -30,7 +30,7 @@ export const myWorks: worksSectionType[] = [
         label: ["Improving Virtual", "Reality Experience for", "Elderly with Dementia"],
         year: "2021",
         logo: "/img/works/vr.png",
-        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/", isActive: true,},
+        button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/vr", isActive: true,},
         bgColor: "#EDF0F9"
     },
     {
@@ -38,7 +38,7 @@ export const myWorks: worksSectionType[] = [
         label: ["Landing Page", "Design Showcase"],
         year: "2022-24",
         logo: "/img/works/landing.png",
-        button: {label: "Browse Designs", bgColor: "#1276c1", link: "/", isActive: true,},
+        button: {label: "Browse Designs", bgColor: "#1276c1", link: "/works/landing", isActive: true,},
         bgColor: "#eaeaea"
     },
 ]
