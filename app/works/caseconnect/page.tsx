@@ -1,9 +1,12 @@
+import Goals from "@/app/ui/components/caseconnect/goals";
 import Info from "@/app/ui/components/caseconnect/info";
+import { mulish } from "@/app/ui/fonts";
 
 export default function Page() {
   return (
-    <div>
+    <div className={`${mulish.className}`}>
       <Info />
+      <Goals />
     </div>
   );
 }

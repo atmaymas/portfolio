@@ -1,10 +1,9 @@
-import { mulish } from "../../fonts";
 import Image from "next/image";
 
 export default function Info() {
   return (
-    <div className={`${mulish.className} px-12`}>
-      <p className="text-4xl text-center mb-8">
+    <div className={`px-12`}>
+      <p className="text-4xl text-center mb-8 font-thin">
         <span className="dark-blue-text font-bold">CaseConnect:</span> Legal
         Workflow Efficience
       </p>
@@ -157,8 +156,8 @@ export default function Info() {
           App
         </div>
       </div>
-      <div>
-      <Image
+      <div className="mb-24">
+        <Image
           className="drop-shadow-2xl rounded-t-lg"
           src="/img/works/caseconnect/board.png"
           alt="Admin"

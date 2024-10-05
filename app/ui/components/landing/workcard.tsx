@@ -43,7 +43,7 @@ export default function WorkCard({
         
         <Link
           href={work.button.isActive ? work.button.link : "#"}
-          className={`${mulish.className} inline-flex items-cente text-sm text-white px-8 py-3 rounded-lg`}
+          className={`${mulish.className} inline-flex items-center text-sm text-white px-8 py-3 rounded-lg`}
           style={{backgroundColor: work.button.bgColor}}
         >
           {work.button.label}
