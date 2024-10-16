@@ -1,5 +1,5 @@
 import { worksSectionType } from "@/app/lib/definitions";
-import { mulish } from "../../fonts";
+import { mulish } from "../../font";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";

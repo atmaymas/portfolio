@@ -85,10 +85,10 @@ export default function Goals() {
       </div>
       <div className="block md:flex justify-end">
         <Link
-          href={"/works/schoolworkspro"}
+          href={"/works/vr"}
           className={`bg-black text-white px-8 py-3 rounded-lg shadow-2xl`}
         >
-          Check Schoolworkspro Design System Case Study Next
+          Check Virtual Reality Experience Case Study Next
         </Link>
       </div>
     </div>

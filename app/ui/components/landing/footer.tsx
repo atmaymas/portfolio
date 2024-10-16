@@ -1,4 +1,4 @@
-import { mulish } from "../../fonts";
+import { mulish } from "../../font";
 
 export default function Footer() {
   return (

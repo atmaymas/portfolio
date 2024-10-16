@@ -1,4 +1,5 @@
-import { mulish } from "@/app/ui/fonts";
+import Card from "@/app/ui/components/card";
+import { mulish } from "@/app/ui/font";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ export default function Page() {
         <p className="text-4xl font-thin">for Elderly with Dementia</p>
       </div>
       <div className="mb-24">
-        <div className="flex justify-center space-x-4">
+        <div className="md:flex justify-center md:space-x-4">
           <Card subtitle="ROLE" title="UXR" content="" />
           <Card
             subtitle="PROJECT TYPE"
@@ -268,26 +269,6 @@ export default function Page() {
           </Link>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Card({
-  subtitle,
-  title,
-  content,
-}: {
-  subtitle: string;
-  title: string;
-  content: string;
-}) {
-  return (
-    <div className="shadow-2xl bg-white rounded-lg px-8 py-5 mb-2">
-      {subtitle && (
-        <small className="text-[#33333366] tracking-wide">{subtitle}</small>
-      )}
-      {title && <p className="text-lg font-semibold">{title}</p>}
-      {content && <p>{content}</p>}
     </div>
   );
 }

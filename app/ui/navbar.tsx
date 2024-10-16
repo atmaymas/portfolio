@@ -68,25 +68,25 @@ export default function NavBar() {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="rounded-md px-3 py-2 font-semibold nav-link-color"
                   aria-current="page"
                 >
                   Home
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/#works"
                   className="rounded-md px-3 py-2 font-semibold nav-link-color"
                 >
                   Works
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="rounded-md px-3 py-2 font-semibold nav-link-color"
                 >
                   Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -97,25 +97,25 @@ export default function NavBar() {
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="block rounded-md px-3 py-2 nav-link-color font-semibold"
               aria-current="page"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/#works"
               className="block rounded-md px-3 py-2 font-semibold nav-link-color"
             >
               Works
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block rounded-md px-3 py-2 font-semibold nav-link-color"
             >
               Me
-            </a>
+            </Link>
           </div>
         </div>
       )}
