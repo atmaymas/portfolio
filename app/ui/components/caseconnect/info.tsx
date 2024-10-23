@@ -41,7 +41,7 @@ export default function Info() {
       <div className="mb-12">
         <p className="mx-auto w-full md:w-3/4">
           The Captios CaseConnect eDiscovery and Case Management Platform, known
-          as "CaseConnect," revolutionizes the legal landscape by providing an
+          as &quot;CaseConnect,&quot; revolutionizes the legal landscape by providing an
           integrated solution for attorneys and law firms. This all-in-one
           service streamlines the management of legal documents, photos, videos,
           and various file types crucial to the legal process. With CaseConnect,
@@ -72,12 +72,12 @@ export default function Info() {
           often result in time-consuming processes, increased risk of errors,
           and limited accessibility to important documents. Moreover, the
           complexity of legal proceedings requires solutions that cater towards
-          both the technical and non-technical users' needs. By providing a
-          comprehensive lists of services tailored for the industry's
+          both the technical and non-technical users&apos; needs. By providing a
+          comprehensive lists of services tailored for the industry&apos;s
           requirements, CaseConnect seeks to streamline document management,
           enhance collaboration, and improve overall efficiency in legal
           operations. However, to ensure optimal adoption and utilization of the
-          platform, it's important to mitigate its value proposition clearly and
+          platform, it&apos;s important to mitigate its value proposition clearly and
           address any potential concerns or risks to adoption.
         </p>
       </div>

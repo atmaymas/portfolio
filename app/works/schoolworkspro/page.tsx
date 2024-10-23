@@ -23,7 +23,7 @@ export default function Page() {
       <div className="md:w-3/4 mx-auto mb-10">
         <p className="mb-10">
           In 2024, the design team was tasked with redesigning the Admin
-          Dashboard for Schoolworkspro, aiming to reimagine the platform's
+          Dashboard for Schoolworkspro, aiming to reimagine the platform&apos;s
           future while addressing the immediate needs of our users. As part of
           this project, I was responsible for the effort to overhaul existing
           components and develop a comprehensive design system from the ground
@@ -92,7 +92,7 @@ export default function Page() {
         </p>
         <p className="mb-8">
           For the color palette, I selected primary and secondary colors aligned
-          with Schoolworkspro's brand identity and logo. In addition to these, I
+          with Schoolworkspro&apos;s brand identity and logo. In addition to these, I
           incorporated essential colors like grey, green, red, orange, and pink,
           which were already in use across various Schoolworkspro platforms. To
           ensure accessibility, I adhered to the WCAG guidelines by conducting a
@@ -349,10 +349,10 @@ export default function Page() {
           different organizations.
         </p>
         <p className="mb-8">
-          It's important to note that, as of now, the web implementation is
+          It&apos;s important to note that, as of now, the web implementation is
           still in progress. Depending on technical feasibility, some design
           elements may be subject to further refinement during development.
-          However, the foundational design system we’ve established will serve
+          However, the foundational design system we&apos;ve established will serve
           as a solid base moving forward, ensuring consistency and scalability.
           Future updates are unlikely to require a complete overhaul, as this
           redesign did.

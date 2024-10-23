@@ -13,7 +13,9 @@ export default function Works() {
       </div>
       <div>
         {myWorks.map((work, index) => (
+          <div key={index}>
             <WorkCard work={work} index={index} />
+          </div>
         ))}
 
       </div>
