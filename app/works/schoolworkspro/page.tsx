@@ -45,26 +45,26 @@ export default function Page() {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Typography: There was a lack of a cohesive type system, with four
+            <b>Typography</b>: There was a lack of a cohesive type system, with four
             different fonts used across the site and over 20 different type
             scales and styles. This inconsistency disrupted the visual
             hierarchy, making it difficult for users to scan and understand
             content efficiently.
           </li>
           <li>
-            Colors: There was no established color standard or palette, leading
+            <b>Colors</b>: There was no established color standard or palette, leading
             to inconsistent color usage across various components. This created
             visual confusion and detracted from a cohesive user interface.
           </li>
           <li>
-            Buttons, Tags, and Tabs: These elements shared similar styles, which
+            <b>Buttons, Tags, and Tabs</b>: These elements shared similar styles, which
             made it difficult for users to differentiate between interactive
             elements and navigate the platform effectively. The lack of visual
             distinction led to confusion about which elements were clickable or
             merely informational.
           </li>
           <li>
-            Tables: Table layouts suffered from poor legibility, particularly
+          <b>Tables</b>: Table layouts suffered from poor legibility, particularly
             due to overly high contrast in the headings. This not only made it
             harder for users to read the content but also caused unnecessary eye
             strain, particularly when viewing large datasets.
@@ -112,32 +112,33 @@ export default function Page() {
         </p>
         <ul className="list-inside list-disc">
           <li>
-            Display: Large headings used for major sections or landing pages.
+            <b>Display</b>: Large headings used for major sections or landing pages.
           </li>
           <li>
-            Headings: Applied across H1 to H6 for structured content, ensuring
+            <b>Headings</b>: Applied across H1 to H6 for structured content, ensuring
             clear hierarchy.
           </li>
           <li>
-            Body: Text sizes that ranged from XXXL to Tiny, catering to
+           <b>Body</b>: Text sizes that ranged from XXXL to Tiny, catering to
             paragraphs and smaller text elements across different screen sizes.
           </li>
           <li>
-            Buttons & Labels: Designed specifically for action-driven elements
+            <b>Buttons & Labels</b>: Designed specifically for action-driven elements
             and form labels.
           </li>
         </ul>
         <p>
+          <br></br>
           Each type category was assigned three different styles to maintain
           flexibility and accommodate different content needs:
         </p>
         <ul className="list-inside list-disc">
-          <li>Bold: Used for high emphasis and important actions.</li>
+          <li><b>Bold:</b> Used for high emphasis and important actions.</li>
           <li>
-            Medium: Applied for medium emphasis, typically in subheadings or
+            <b>Medium:</b> Applied for medium emphasis, typically in subheadings or
             less prominent buttons.
           </li>
-          <li>Regular: Utilized for body text and standard content.</li>
+          <li><b>Regular:</b> Utilized for body text and standard content.</li>
         </ul>
         <p>
           This approach ensured a consistent and adaptable typographic hierarchy
@@ -176,29 +177,29 @@ export default function Page() {
         </p>
         <ul className="list-inside list-disc">
           <li>
-            Sizes: Buttons are available in three sizes—small, medium, and
+          <b>Sizes</b>: Buttons are available in three sizes—small, medium, and
             large—to suit various use cases, from minimal action buttons to more
             prominent calls-to-action.
           </li>
           <li>
-            Icon Support: Buttons are versatile, supporting both right and left
+          <b>Icon Support</b>: Buttons are versatile, supporting both right and left
             icons for better affordance, with icons clearly indicating the
             function or destination of the action.
           </li>
           <li>
-            Primary & Secondary Actions: Primary buttons are the most prominent,
+          <b>Primary & Secondary Actions</b>: Primary buttons are the most prominent,
             driving the main action on the page. They come with clear
             color-coded states: normal, hover, and disabled. Secondary buttons
             are more subtle but still maintain enough contrast to be
             distinguishable.
           </li>
           <li>
-            Color Variations: Buttons come in different color options: primary,
+          <b>Color Variations</b>: Buttons come in different color options: primary,
             secondary, gray, and pink. Each button has normal, hover, and
             disabled states to guide users visually through their interactions.
           </li>
           <li>
-            Tertiary Buttons: For less prominent actions, tertiary buttons offer
+          <b>Tertiary Buttons</b>: For less prominent actions, tertiary buttons offer
             a more minimal design while still following the same state-based
             interaction feedback as primary and secondary buttons.
           </li>
@@ -226,30 +227,30 @@ export default function Page() {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            Input Fields: Input fields support various states: normal, hover,
+            <b>Input Fields</b>: Input fields support various states: normal, hover,
             clicked, typing, filled, success, and error. Clear visual feedback
             is provided, like changing the border color (blue for active, red
             for error, and green for success).
           </li>
           <li>
-            Labels: Consistent labels guide users, placed both inside and
+          <b>Labels</b>: Consistent labels guide users, placed both inside and
             outside fields, depending on the form requirement. They also support
             icons for added context, such as social media, price, or date
             fields.
           </li>
           <li>
-            Validation: Error and success states are distinct, using color cues
+          <b>Validation</b>: Error and success states are distinct, using color cues
             like red for errors and green for success. Error messages are
             accompanied by labels to ensure the user understands the issue.
           </li>
           <li>
-            Search Functionality: The search bar offers a dropdown with user
+          <b>Search Functionality</b>: The search bar offers a dropdown with user
             suggestions when typing, making it easier to find the correct user
             or data entry. This improves the user experience by minimizing
             typing errors.
           </li>
           <li>
-            Dropdown & Date Selector: Dropdowns are designed with hover states
+          <b>Dropdown & Date Selector</b>: Dropdowns are designed with hover states
             and disabled states to guide users through selection. The date
             picker allows seamless navigation of dates, structured with
             user-friendly interface controls.
@@ -275,17 +276,17 @@ export default function Page() {
 
         <ul className="list-disc list-inside">
           <li>
-            Condensed Structure: The updated sidebar features a more compact and
+          <b>Condensed Structure</b>: The updated sidebar features a more compact and
             organized layout, reducing visual clutter and helping users quickly
             find sections without scrolling extensively.
           </li>
           <li>
-            Collapsible Sections: Categories within the sidebar are grouped into
+          <b>Collapsible Sections</b>: Categories within the sidebar are grouped into
             collapsible sections, making the design cleaner while still offering
             access to all necessary items.
           </li>
           <li>
-            Sections Moved to Main Page Header: Instead of grouping all the
+            <b>Sections Moved to Main Page Header</b>: Instead of grouping all the
             sections within collapsible menus in the sidebar, I relocated key
             sections to the main page header and used selection tabs instead.
             This allows for easier access and reduces the need for constant
