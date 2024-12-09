@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Goals() {
   return (
-    <div>
+    <div className="p-12">
       <div className="flex justify-center mb-16">
         <div className="shadow-2xl bg-white rounded-lg px-8 py-6 mb-2">
           <p className="font-semibold">Goals &amp; Features</p>
@@ -73,16 +73,28 @@ export default function Goals() {
           </div>
         </div>
       </div>
+      <br></br><br></br>
       <div className="mb-16">
-        <div className="p-2 shadow-2xl bg-white">
+        <div
+          className="p-2 shadow-2xl bg-white rounded-lg"
+          style={{
+            borderRadius: "16px"
+          }}>
           <Image
             src={"/img/works/caseconnect/screens.png"}
             alt="screens"
-            width={1440}
-            height={720}
+            width={1500}
+            height={600}
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "auto",
+              maxHeight: "600px",
+            }}
           />
         </div>
       </div>
+
       <div className="block md:flex justify-end">
         <Link
           href={"/works/vr"}

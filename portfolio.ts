@@ -31,7 +31,7 @@ export const myWorks: worksSectionType[] = [
         year: "2021",
         logo: "/img/works/vr.png",
         button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/vr", isActive: true,},
-        bgColor: "#EDF0F9"
+        bgColor: "#eaeaea"
     },
     {
         tags: [{tagName: "Interface Design", bgColor: "#dfdfdf", color: "#525665"}],
@@ -39,6 +39,6 @@ export const myWorks: worksSectionType[] = [
         year: "2022-24",
         logo: "/img/works/landing.png",
         button: {label: "Browse Designs", bgColor: "#1276c1", link: "/works/landing", isActive: true,},
-        bgColor: "#eaeaea"
+        bgColor: "#EDF0F9"
     },
 ]

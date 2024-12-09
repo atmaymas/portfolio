@@ -111,7 +111,7 @@ export default function NavBar() {
               Works
             </Link>
             <Link
-              href="#"
+              href="/Sam-cv.pdf"
               className="block rounded-md px-3 py-2 font-semibold nav-link-color"
             >
               Me

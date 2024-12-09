@@ -162,7 +162,7 @@ export default function Info() {
           src="/img/works/caseconnect/board.png"
           alt="Admin"
           objectFit="cover"
-          width={1420}
+          width={1820}
           height={800}
         />
       </div>
