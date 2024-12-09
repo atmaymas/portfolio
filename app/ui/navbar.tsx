@@ -81,12 +81,14 @@ export default function NavBar() {
                 >
                   Works
                 </Link>
-                <Link
-                  href="#"
-                  className="rounded-md px-3 py-2 font-semibold nav-link-color"
+                <a
+                  href="/cv.pdf" // Replace with the correct path to your PDF file
+                  target="_blank" // Opens the PDF in a new tab
+                  rel="noopener noreferrer" // Provides security for new tab openings
+                  className="block rounded-md px-3 py-2 font-semibold nav-link-color"
                 >
                   Me
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -110,12 +112,15 @@ export default function NavBar() {
             >
               Works
             </Link>
-            <Link
-              href="/Sam-cv.pdf"
+            <a
+              href="/cv.pdf" // Replace with the correct path to your PDF file
+              target="_blank" // Opens the PDF in a new tab
+              rel="noopener noreferrer" // Provides security for new tab openings
               className="block rounded-md px-3 py-2 font-semibold nav-link-color"
             >
               Me
-            </Link>
+            </a>
+
           </div>
         </div>
       )}
