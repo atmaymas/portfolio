@@ -16,7 +16,7 @@ export default function Hero() {
           <p className="m-0 text-left md:text-right font-semibold text-[38px] lg:text-[30px] xl:text-[38px] pr-0 md:pr-6 overflow-x-auto md:overflow-hidden">
             <span className="text-[#16649e]">Samyamta Sen </span>is a digital
             <br /> <span className="underline"><i>product designer</i></span>
-            <br /> currently designing
+            <br /> currently working
             <br /> at <span className="text-[#ff774c]">Digi Technology.</span>
           </p>
         </div>

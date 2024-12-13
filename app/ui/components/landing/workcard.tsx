@@ -40,8 +40,10 @@ export default function WorkCard({
             </h2>
           ))}
         </div>
-
-        <p className={`${mulish.className} gray-text mb-6`}>2024</p>
+        
+        <p className={`${mulish.className} gray-text mb-6`}>{work.year}</p>
+ 
+        {/*<p className={`${mulish.className} gray-text mb-6`}>2024</p>*/}
         
         <Link
           href={work.button.isActive ? work.button.link : "#"}
