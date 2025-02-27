@@ -1,12 +1,10 @@
 "use client";
 import { useState } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 
 export default function NavBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isProfileDropdownOpen, setProfileDropdownOpen] = useState(false);
 
   return (
     <nav className="primary-bg fixed left-0 top-0 w-full z-10">
@@ -70,22 +68,22 @@ export default function NavBar() {
               <div className="flex space-x-4">
                 <Link
                   href="/"
-                  className="rounded-md px-3 py-2 font-semibold nav-link-color"
+                  className="rounded-md px-3 py-2 font-semibold nav-link-color hover:bg-[#16649e] hover:text-white"
                   aria-current="page"
                 >
                   Home
                 </Link>
                 <Link
                   href="/#works"
-                  className="rounded-md px-3 py-2 font-semibold nav-link-color"
+                  className="rounded-md px-3 py-2 font-semibold nav-link-color hover:bg-[#16649e] hover:text-white"
                 >
                   Works
                 </Link>
                 <a
-                  href="/cv.pdf" // Replace with the correct path to your PDF file
-                  target="_blank" // Opens the PDF in a new tab
-                  rel="noopener noreferrer" // Provides security for new tab openings
-                  className="block rounded-md px-3 py-2 font-semibold nav-link-color"
+                  href="/cv.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block rounded-md px-3 py-2 font-semibold nav-link-color hover:bg-[#16649e] hover:text-white"
                 >
                   Me
                 </a>
@@ -101,26 +99,25 @@ export default function NavBar() {
           <div className="space-y-1 px-2 pb-3 pt-2">
             <Link
               href="/"
-              className="block rounded-md px-3 py-2 nav-link-color font-semibold"
+              className="block rounded-md px-3 py-2 nav-link-color font-semibold hover:bg-[#16649e] hover:text-white"
               aria-current="page"
             >
               Home
             </Link>
             <Link
               href="/#works"
-              className="block rounded-md px-3 py-2 font-semibold nav-link-color"
+              className="block rounded-md px-3 py-2 font-semibold nav-link-color hover:bg-[#16649e] hover:text-white"
             >
               Works
             </Link>
             <a
-              href="/cv.pdf" // Replace with the correct path to your PDF file
-              target="_blank" // Opens the PDF in a new tab
-              rel="noopener noreferrer" // Provides security for new tab openings
-              className="block rounded-md px-3 py-2 font-semibold nav-link-color"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-md px-3 py-2 font-semibold nav-link-color hover:bg-[#16649e] hover:text-white"
             >
               Me
             </a>
-
           </div>
         </div>
       )}

@@ -20,7 +20,7 @@ export const myWorks: worksSectionType[] = [
     {
         tags: [{tagName: "Product Design", bgColor: "#d9deee", color: "#6878ac"},],
         label: ["Unicampus Global"],
-        year: "2023-24",
+        year: "2024-25",
         logo: "/img/works/unicampus.png",
         button: {label: "Under-Construction", bgColor: "#babfc3", link: "/", isActive: false,},
         bgColor: "#EDF0F9"

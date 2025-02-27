@@ -5,7 +5,7 @@ export default function Info() {
     <div className={`px-12`}>
       <p className="text-4xl text-center mb-8 font-thin">
         <span className="dark-blue-text font-bold">CaseConnect:</span> Legal
-        Workflow Efficience
+        Workflow Efficiency
       </p>
       <div className="relative mb-24">
         <Image
