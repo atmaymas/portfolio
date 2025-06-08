@@ -1,272 +1,417 @@
-import Card from "@/app/ui/components/card";
 import { mulish } from "@/app/ui/font";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Page() {
+import React from 'react';
+
+interface CardProps {
+  subtitle?: string;
+  title?: string;
+  content?: string;
+  className?: string;
+}
+
+const Card: React.FC<CardProps> = ({ subtitle, title, content, className = "" }) => (
+  <div className={`bg-white rounded-lg shadow-md p-6 ${className}`}>
+    {subtitle && <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">{subtitle}</p>}
+    {title && <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>}
+    {content && <p className="text-gray-700">{content}</p>}
+  </div>
+);
+
+interface OutcomeCardProps {
+  icon: string;
+  title: string;
+  description: string;
+  bgColor?: string;
+}
+
+const OutcomeCard: React.FC<OutcomeCardProps> = ({ icon, title, description, bgColor = "bg-blue-50" }) => (
+  <div className={`${bgColor} rounded-lg p-6`}>
+    <div className="text-2xl mb-3">{icon}</div>
+    <h4 className="font-semibold text-gray-900 mb-2">{title}</h4>
+    <p className="text-sm text-gray-700">{description}</p>
+  </div>
+);
+
+interface InsightCardProps {
+  icon: string;
+  title: string;
+  quote: string;
+}
+
+const InsightCard: React.FC<InsightCardProps> = ({ icon, title, quote }) => (
+  <div className="bg-white rounded-lg p-6 shadow-sm border">
+    <div className="flex items-center mb-4">
+      <span className="text-2xl mr-3">{icon}</span>
+      <h4 className="font-bold text-gray-900">{title}</h4>
+    </div>
+    <blockquote className="text-gray-700 italic">"{quote}"</blockquote>
+  </div>
+);
+
+interface DesignOpportunityCardProps {
+  title: string;
+  description: string;
+  bgColor?: string;
+}
+
+const DesignOpportunityCard: React.FC<DesignOpportunityCardProps> = ({ title, description, bgColor = "bg-blue-50" }) => (
+  <div className="bg-white rounded-lg p-6 shadow-sm border mb-6">
+    <h4 className="font-bold text-gray-900 mb-3">{title}</h4>
+    <p className="text-gray-700">{description}</p>
+  </div>
+);
+
+interface PrincipleCardProps {
+  title: string;
+  description: string;
+  bgColor?: string;
+}
+
+const PrincipleCard: React.FC<PrincipleCardProps> = ({ title, description, bgColor = "bg-blue-50" }) => (
+  <div className={`${bgColor} rounded-lg p-6`}>
+    <h4 className="font-bold text-gray-900 mb-3">{title}</h4>
+    <p className="text-gray-700 text-sm">{description}</p>
+  </div>
+);
+
+export default function VRElderlyDementiaCaseStudy() {
   return (
-    <div className={`${mulish.className}`}>
-      <div className="text-center mb-12">
-        <p className="text-4xl mb-4 font-thin">
-          Improving Virtual Reality Experience
-        </p>
-        <p className="text-4xl font-thin">for Elderly with Dementia</p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header with gradient background */}
+      <div className="bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 text-white py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-5xl font-light mb-6 leading-tight">
+            Improving Virtual Reality
+          </h1>
+          <h2 className="text-5xl font-light mb-4">
+            for <span className="text-blue-400 font-bold">Elderly Users</span> with Dementia
+          </h2>
+        </div>
+        
+        {/* Project details cards - horizontal */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="flex flex-wrap justify-center gap-4">
+            <Card subtitle="ROLE" title="UX Researcher" className="flex-1 min-w-[200px]" />
+            <Card subtitle="TEAM" title="Multi-disciplinary University Team" className="flex-1 min-w-[200px]" />
+            <Card subtitle="DURATION" title="3 Months" className="flex-1 min-w-[200px]" />
+          </div>
+        </div>
       </div>
-      <div className="mb-24">
-        <div className="md:flex justify-center md:space-x-4">
-          <Card subtitle="ROLE" title="UXR" content="" />
-          <Card
-            subtitle="PROJECT TYPE"
-            title="University Team Project"
-            content=""
+
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        
+        {/* Project Overview */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Project Overview</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-16">
+          <p className="text-gray-700 leading-relaxed mb-6">
+            This university-led project explored how <strong>virtual reality (VR)</strong> could enhance the lives of elderly individuals living with dementia. Our goal was to create a more inclusive, calming, and cognitively supportive VR experience tailored to their unique challenges. Over a 3-month research and design sprint, we identified opportunities to support emotional well-being, reduce social isolation, and enable safe, meaningful engagement with digital environments.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed mb-6">
+            While reminiscence therapy has long been used to support cognitive health, it typically lacks interactivity and personalization. By leveraging the immersive potential of VR, we set out to elevate this therapeutic experience — transforming memory recall into an intuitive, multisensory journey.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed">
+            Through contextual inquiries, interviews, and a literature review, we found existing reminiscence therapy methods to be beneficial, but static. VR showed strong potential for triggering personal memories, enhancing mood, and encouraging social interaction while addressing the unique accessibility needs of elderly users with cognitive decline.
+          </p>
+        </div>
+
+        {/* Problem & Context */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Problem & Context</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Older adults with dementia often experience a combination of cognitive, emotional, and physical challenges that limit their engagement with conventional technologies. Through our research, we identified three core areas of difficulty:
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-1 gap-6 mb-8">
+          <InsightCard 
+            icon="🤝" 
+            title="Limited communication and social isolation"
+            quote="Sometimes I go days without talking to anyone. It would be nice to just have someone around — even virtually."
           />
-          <Card subtitle="PROJECT TIME" title="3 Months" content="" />
-          <Card subtitle="SECTOR" title="VR" content="" />
+          <InsightCard 
+            icon="🧠" 
+            title="Declining memory and task navigation difficulties"
+            quote="I forget what I was doing halfway through… too many buttons confuse me."
+          />
+          <InsightCard 
+            icon="📱" 
+            title="Difficulty engaging with conventional technologies"
+            quote="Most devices are too complicated. I need something simple that doesn't make me feel lost."
+          />
         </div>
-      </div>
-      <div>
-        <div className="md:w-5/12 mx-auto">
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Background / Problem" content="" />
+        
+        
+        <div className="bg-red-50 border-l-4 border-red-400 p-6 mb-16">
+          <p className="text-gray-700 leading-relaxed">
+            These challenges highlighted the need for a technology solution that could provide meaningful engagement while accommodating cognitive limitations, physical constraints, and emotional safety requirements.
+          </p>
+        </div> <div className="relative mb-24"><Image
+          className="drop-shadow-2xl rounded-t-lg"
+          src="/img/works/vr/vr2.png"
+          alt="vr"
+          width={1740}
+          height={1020}
+        /></div>
+
+        {/* My Role & Team */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">My Role & Team</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-16">
+          <p className="text-gray-700 leading-relaxed mb-6">
+            As the <strong>UX Researcher</strong> on a multi-disciplinary university team, I was responsible for leading the human-centered research process and translating insights into actionable design recommendations. My key contributions included:
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-white rounded-lg p-6 shadow-sm border">
+              <ul className="space-y-3 text-gray-700">
+                <li>• Conducting <strong>interviews and contextual research</strong> with early-stage dementia patients and caregivers</li>
+                <li>• <strong>Synthesizing findings</strong> to uncover user needs and behavioral patterns</li>
+                <li>• <strong>Mapping emotional journeys</strong> to identify design opportunities</li>
+              </ul>
             </div>
-            <p className="px-5 mb-5">
-              The aim of this study is to improve the virtual reality (VR)
-              experience for elderly individuals with dementia. The project
-              focuses on addressing the unique needs and challenges faced by
-              this target audience, with the goal of enhancing their cognitive
-              well-being and quality of life.
-            </p>
-            <p className="px-5">
-              Through contextual inquiry, surveys, and interviews, we identified
-              that elderly individuals with dementia face limitations in
-              communication and reduced opportunities for social interaction.
-              Reminiscence therapy, which involves recalling past experiences,
-              has been proven effective in reducing anxiety and improving mood.
-              However, existing reminiscence therapy methods lack the immersive
-              and interactive elements that VR can provide.
-            </p>
-          </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Process" content="" />
-            </div>
-            <p className="px-5 mb-5">
-              To address the problem space, we conducted user research involving
-              older adults, including those with early-stage dementia. We
-              utilized a mixed-methods approach, including contextual analysis,
-              surveys, interviews, and literature reviews. The research aimed to
-              gain insights into the needs, pain points, and preferences of the
-              target audience, as well as understand the potential benefits and
-              risks associated with VR technology for dementia patients.
-            </p>
-          </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Key Insights" content="" />
-            </div>
-            <div className="px-5">
-              <div className="mb-4">
-                <Card
-                  subtitle="INSIGHT #1"
-                  title="Social Isolation and Loneliness"
-                  content="User interviews revealed that social isolation and feelings of loneliness were significant concerns among elderly individuals with dementia. Many participants expressed a strong desire for social connection and meaningful engagement to enhance their overall well-being."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="INSIGHT #2"
-                  title="Cognitive Decline and Memory Loss"
-                  content="The impact of cognitive decline and memory loss on daily functioning was evident during observations. Users often struggled with complex interfaces and had difficulty remembering tasks or navigating through applications. Simplifying interactions and providing memory support emerged as important design considerations."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="INSIGHT #3"
-                  title="Potential of Virtual Reality"
-                  content="Literature reviews highlighted the potential of virtual reality in reminiscence therapy and cognitive stimulation for individuals with dementia. Recreating familiar environments and triggering personal memories through virtual experiences showed promise in improving cognitive abilities and quality of life."
-                />
-              </div>
+            <div className="bg-white rounded-lg p-6 shadow-sm border">
+              <ul className="space-y-3 text-gray-700">
+                <li>• Collaborating with design teammates to <strong>co-create inclusive interaction patterns</strong></li>
+                <li>• Developing <strong>safety measures and risk mitigation strategies</strong></li>
+                <li>• <strong>Presenting findings</strong> to stakeholders and faculty for evaluation</li>
+              </ul>
             </div>
           </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Design Opportunities" content="" />
-            </div>
-            <div className="px-5">
-              <div className="mb-4">
-                <Card
-                  subtitle="OPPORTUNITY #1"
-                  title="Enhancing Social Connection:"
-                  content="One of the key design opportunities is to develop features that promote social interaction and connection among elderly individuals with dementia. The solution could include creating virtual communities, multiplayer games, or chat functionalities that allow users to connect with their peers or caregivers. It is crucial to design intuitive and user-friendly interfaces that facilitate communication and engagement, taking into account the cognitive and physical limitations of the target audience. Integrating support systems, such as prompts or reminders, can encourage regular social participation and reduce feelings of isolation."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="OPPORTUNITY #2"
-                  title="Memory Support and Cognitive Stimulation:"
-                  content="Another significant design opportunity lies in providing memory support and cognitive stimulation for individuals with dementia. The solution could involve leveraging virtual reality to offer reminiscence therapy, where users can engage with personalised memories and familiar environments. Techniques like spaced repetition and cognitive exercises can be implemented to improve memory retention and cognitive functioning. Creating intuitive navigation and interaction patterns that accommodate cognitive impairments is essential to ensure ease of use and minimise frustration."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="OPPORTUNITY #3"
-                  title="Personalised and Adaptive Experiences:"
-                  content="Designing personalised experiences that adapt to the individual needs and preferences of users with dementia is crucial. This can involve offering customisation options, adjustable difficulty levels, and tailored content to provide a more engaging and meaningful experience. Leveraging machine learning and AI algorithms to analyse user data and adapt the interface, content, and interactions based on individual cognitive and emotional profiles can enhance personalisation. Incorporating multimodal feedback, including visual, auditory, and haptic cues, can further enhance user engagement and comprehension."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="OPPORTUNITY #4"
-                  title="Accessible Design for Physical Impairments:"
-                  content="Ensuring accessibility for individuals with physical impairments is another important design opportunity. The solution should accommodate limitations commonly experienced by elderly individuals, such as limited mobility, visual impairment, and auditory impairment. Providing alternative interaction modes, such as gesture-based controllers, voice commands, or simplified button controls, can cater to individuals with reduced dexterity or hand-eye coordination. It is crucial to consider proper colour contrast, font size, and provide text alternatives (voice and symbols) for users with visual impairments, making the interface more inclusive and accessible."
-                />
-              </div>
-            </div>
-          </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Design Principles" content="" />
-            </div>
-            <p className="px-5 mb-8">
-              To guide the development of the virtual reality solution for
-              elderly individuals with dementia, a set of design principles was
-              established based on the identified needs and insights from the
-              research.
+          
+          <p className="text-gray-700 leading-relaxed">
+            Our team was composed of students in <strong>interaction design, psychology, and computing science</strong>, working collaboratively with faculty and healthcare partners. This interdisciplinary approach allowed us to address both technical feasibility and therapeutic effectiveness.
+          </p>
+        </div>
+
+        {/* Key Research Insights */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Research Insights</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Through our research process, we uncovered three critical insights that would inform our design approach:
+          </p>
+        </div>
+
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">1. Social Isolation & Loneliness</h3>
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Many elderly individuals reported feeling disconnected from others. They expressed a deep need for emotional connection, meaningful activities, and easy-to-use tools for engagement.
             </p>
-            <div className="px-5">
-              <div className="mb-4">
-                <Card
-                  subtitle="PRINCIPLE #1"
-                  title="Cognitive Consideration:"
-                  content="Given the impact of cognitive decline and memory loss, design interactions that accommodate the users' cognitive abilities. Keep tasks and navigation simple, reducing the number of features to minimise cognitive overload. Provide clear instructions and prompts to assist users in staying focused and remembering their tasks and locations within the application."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="PRINCIPLE #2"
-                  title="Physical Consideration:"
-                  content="Recognising the physical challenges commonly experienced by the elderly, design interactions that address balance issues and musculoskeletal fatigue. Reduce the weight of the head-mounted display (HMD) to ensure comfort and safety during prolonged use. Explore gesture-based controllers and a seated virtual reality experience to accommodate users with balance issues. Provide text alternatives, voice options, and symbols to cater to visual and auditory impairments."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="PRINCIPLE #3"
-                  title="User-Focused Experience:"
-                  content="Place the elderly users at the center of the design process, considering their unique needs, preferences, and limitations. Avoid age-discriminatory stereotypes and prejudices while ensuring inclusivity and accessibility. Empower users to adapt to and navigate the challenges they face by providing intuitive and user-friendly interactions."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="PRINCIPLE #4"
-                  title="Emotional Well-being:"
-                  content="Recognise the emotional impact of the virtual reality experience on individuals with dementia. Design experiences that promote positive emotions and avoid triggering negative or distressing memories. Use familiar and comforting elements to create a sense of safety and security within the virtual environment."
-                />
-              </div>
-              <div className="mb-4">
-                <Card
-                  subtitle="PRINCIPLE #4"
-                  title="Personalisation and Meaningfulness:"
-                  content="Incorporate personalization features to make the experience more meaningful and relevant to each user. Allow customization of environments, music, or themes to evoke personal memories and create a sense of familiarity. This personal touch can enhance engagement and overall satisfaction with the virtual reality application."
-                />
-              </div>
-            </div>
-          </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Risks" content="" />
-            </div>
-            <p className="px-5 mb-8">
-              Several risks associated with using VR for elderly individuals
-              with dementia were identified. To mitigate these risks, the
-              following strategies were proposed:
-            </p>
-            <div className="px-5">
-              <ol className="list-decimal list-outside space-y-2">
-                <li>
-                  Nausea: Educate users, gradually expose them to VR, and
-                  provide breaks during sessions.
-                </li>
-                <li>
-                  Falls: Implement safety measures such as a seated experience,
-                  stability support, and clearly defined play areas.
-                </li>
-                <li>
-                  Over-immersion: Design VR experiences that strike a balance
-                  between immersion and maintaining a connection with reality.
-                  Provide guidance and support from caregivers or therapists.
-                </li>
-                <li>
-                  Emotional triggers: Carefully curate content to minimise the
-                  risk of bringing back difficult or emotional memories. Involve
-                  family members or caregivers in the process for better
-                  understanding and support.
-                </li>
-              </ol>
-            </div>
+            <blockquote className="text-gray-700 italic">
+              "Sometimes I go days without talking to anyone. It would be nice to just have someone around — even virtually."
+            </blockquote>
           </div>
         </div>
-        <div className="px-8">
-          <div className="mb-8">
-            <Image
-              src="/img/works/vr/vr1.png"
-              alt="vr1"
-              width="1500"
-              height="827"
-            />
-          </div>
-          <div className="mb-8">
-            <Image
-              src="/img/works/vr/vr2.png"
-              alt="vr2"
-              width="1500"
-              height="827"
-            />
+
+        <div className="mb-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">2. Cognitive Decline & Interface Complexity</h3>
+          <div className="bg-orange-50 border-l-4 border-orange-400 p-6 mb-6">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Users found it difficult to recall steps or navigate complex UIs. This confirmed the importance of clear guidance, memory support, and low-friction interactions.
+            </p>
+            <blockquote className="text-gray-700 italic">
+              "I forget what I was doing halfway through… too many buttons confuse me."
+            </blockquote>
           </div>
         </div>
-        <div className="md:w-5/12 mx-auto">
-          <div className="mb-24">
-            <p className="px-5">
-              Building upon the design opportunities and principles, we
-              envisioned a VR system that allows users to immerse themselves in
-              their past photographs and experiences. Users would have the
-              ability to explore familiar locations, engage with personalized
-              content, and interact with their past memories, all within a safe
-              and accessible VR environment.
+
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">3. Potential of VR in Reminiscence Therapy</h3>
+          <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Academic and clinical studies supported VR's role in stimulating memory, especially when environments mirrored real or familiar places. Users showed positive emotional responses to immersive, familiar environments.
             </p>
-          </div>
-          <div className="mb-24">
-            <div className="mb-8">
-              <Card subtitle="" title="Conclusion" content="" />
-            </div>
-            <p className=" px-5 mb-8">
-              This study highlights the importance of addressing the unique
-              needs and challenges of elderly individuals with dementia when
-              designing VR experiences. The research methodology, including
-              discovery and key insights, helped to identify design
-              opportunities and principles that enhance the VR experience for
-              this target audience. The ideation and conceptualisation phases
-              resulted in a tailored VR solution that promotes cognitive
-              stimulation and engagement. However, the risks associated with VR
-              use for elderly individuals with dementia must be carefully
-              managed to ensure a safe and positive experience.
-            </p>
-            <p className="px-5">
-              By addressing the identified challenges and risks, the proposed VR
-              solution has the potential to significantly improve the well-being
-              and quality of life for elderly individuals with dementia,
-              offering a personalised and engaging experience that stimulates
-              cognitive function and fosters positive emotional well-being.
-            </p>
+            <blockquote className="text-gray-700 italic">
+              "I saw the beach I used to visit with my family — it made me smile and remember the smell of the sea."
+            </blockquote>
           </div>
         </div>
-        <div className="block md:flex justify-end">
-          <Link
-            href={"/works/schoolworkspro"}
-            className={`bg-black text-white px-8 py-3 rounded-lg shadow-2xl`}
+
+        {/* Design Opportunities */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Design Opportunities</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Based on our research insights, we identified five key design opportunities that could address the core challenges faced by elderly users with dementia:
+          </p>
+        </div>
+
+
+        <DesignOpportunityCard 
+          title="Support Social Connection"
+          description="Through chat features, multiplayer modes, or shared spaces with caregivers to reduce isolation and enable meaningful interaction."
+        />
+
+        <DesignOpportunityCard 
+          title="Enable Personalized Memory Recall"
+          description="By recreating meaningful locations, incorporating familiar music, or displaying family scenes to trigger positive memories and emotional responses."
+        />
+
+        <DesignOpportunityCard 
+          title="Incorporate Cognitive Prompts"
+          description="Using spaced repetition, memory cues, and simple task flows to support cognitive function without overwhelming users."
+        />
+
+        <DesignOpportunityCard 
+          title="Design for Accessibility"
+          description="With seated experiences, large font sizes, voice options, and simplified gestures to accommodate physical limitations."
+        />
+
+        <DesignOpportunityCard 
+          title="Create Emotionally Positive Content"
+          description="Through curated visuals, calming themes, and non-triggering content that promotes well-being and emotional safety."
+        />
+        
+        <div className="relative mb-24"><Image
+          className="drop-shadow-2xl rounded-t-lg"
+          src="/img/works/vr/vr1.png"
+          alt="vr"
+          width={1740}
+          height={1020}
+        /></div>
+        {/* Design Principles */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Design Principles</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            To guide our design decisions, we established five core principles that would ensure our VR solution met the unique needs of elderly users with dementia:
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <PrincipleCard 
+            title="Cognitive Simplicity"
+            description="Reduce cognitive load by simplifying navigation, using clear labels, and guiding users with prompts"
+            bgColor="bg-blue-50"
+          />
+          <PrincipleCard 
+            title="Physical Accessibility"
+            description="Support seated use, minimize head movement, and accommodate limited dexterity or vision"
+            bgColor="bg-green-50"
+          />
+          <PrincipleCard 
+            title="Emotional Safety"
+            description="Avoid content that may evoke distressing memories; incorporate familiarity and positivity"
+            bgColor="bg-purple-50"
+          />
+          <PrincipleCard 
+            title="User Empowerment"
+            description="Avoid stereotypes, build confidence, and allow self-paced exploration"
+            bgColor="bg-orange-50"
+          />
+          <PrincipleCard 
+            title="Personalization"
+            description="Let users or caregivers customize scenes, music, and themes to enhance relevance"
+            bgColor="bg-teal-50"
+          />
+        </div>
+
+        {/* Risks & Mitigation Strategies */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Risks & Mitigation Strategies</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Designing VR experiences for elderly users with dementia required careful consideration of potential risks and proactive mitigation strategies:
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 className="font-bold text-red-600 mb-3">Potential Risks</h4>
+            <ul className="text-gray-700 space-y-2 text-sm">
+              <li>• <strong>Nausea:</strong> Motion sickness from VR experience</li>
+              <li>• <strong>Falls or disorientation:</strong> Physical safety concerns</li>
+              <li>• <strong>Over-immersion:</strong> Difficulty distinguishing reality</li>
+              <li>• <strong>Emotional distress:</strong> Triggering negative memories</li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-lg p-6 shadow-sm border">
+            <h4 className="font-bold text-green-600 mb-3">Mitigation Strategies</h4>
+            <ul className="text-gray-700 space-y-2 text-sm">
+              <li>• <strong>Gradual introduction:</strong> User education and short sessions</li>
+              <li>• <strong>Seated experiences:</strong> Safe play spaces and supervision</li>
+              <li>• <strong>Reality anchors:</strong> Regular check-ins and time limits</li>
+              <li>• <strong>Content curation:</strong> Caregiver control over experiences</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Outcome & Reflection */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Outcome & Reflection</h2>
+        </div>
+        
+        <div className="prose prose-lg max-w-none mb-8">
+          <p className="text-gray-700 leading-relaxed mb-8">
+            Our final concept envisioned a VR experience where users could revisit places from their past, explore familiar environments, and interact with personal content in a calm, accessible space. While we didn't fully prototype the VR application, our research outputs and interaction models laid the groundwork for future development.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <OutcomeCard 
+            icon="🔍" 
+            title="Inclusive Research Leadership" 
+            description="Strengthened my ability to lead empathy-driven research with vulnerable populations"
+            bgColor="bg-blue-50"
+          />
+          <OutcomeCard 
+            icon="🏥" 
+            title="Healthcare Design Expertise" 
+            description="Developed new skills in accessibility advocacy and designing for cognitive variance"
+            bgColor="bg-green-50"
+          />
+          <OutcomeCard 
+            icon="🤝" 
+            title="Cross-functional Collaboration" 
+            description="Enhanced ability to work with non-design disciplines including psychology and healthcare"
+            bgColor="bg-purple-50"
+          />
+          <OutcomeCard 
+            icon="⚖️" 
+            title="Risk Management Planning" 
+            description="Gained experience in identifying and mitigating design risks in sensitive contexts"
+            bgColor="bg-orange-50"
+          />
+        </div>
+
+        <div className="bg-green-50 rounded-lg p-8 mb-16">
+          <p className="text-gray-700 leading-relaxed">
+            This project strengthened my ability to lead inclusive, empathy-driven research and work cross-functionally with non-design disciplines. The experience I gained in accessibility advocacy, risk mitigation planning, and designing for cognitive variance continues to inform my approach to health tech and aging-focused projects.
+          </p>
+        </div>
+
+        {/* Next Project CTA */}
+        <div className="text-right">
+          <a
+            href="/works/schoolworkspro"
+            className="inline-flex items-center bg-gray-900 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-gray-800 transition-colors duration-200"
           >
-            Check Schoolworkspro Design System Case Study Next
-          </Link>
+            Check SchoolworksPro Case Study Next
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
