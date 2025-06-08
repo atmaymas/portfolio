@@ -1,4 +1,8 @@
 import React from 'react';
+import { mulish } from "@/app/ui/font";
+import Image from "next/image";
+import Link from "next/link";
+
 
 interface CardProps {
   subtitle?: string;
@@ -223,7 +227,7 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Color Section */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Color</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">Color</h3>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-gray-700 leading-relaxed mb-6">
               I designed the color system to support <strong>brand integrity</strong>, <strong>usability</strong>, and <strong>accessibility</strong>:
@@ -236,7 +240,13 @@ export default function SchoolworksProCaseStudy() {
             </ul>
           </div>
           
-          <ImagePlaceholder title="Color Palette System" className="h-64 mb-6" />
+          <div className="px-8">
+          <Image
+            src={"/img/works/schoolworkspro/Color.png"}
+            width={1320}
+            height={1150}
+            alt="color"
+          /></div>
           
           <div className="bg-blue-50 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
@@ -250,7 +260,7 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Typography Section */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Typography</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">Typography</h3>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-gray-700 leading-relaxed mb-6">
               I introduced <strong>Inter</strong> as the primary typeface for its high legibility and web-friendliness. I defined a responsive, scalable type system to support various use cases:
@@ -266,7 +276,14 @@ export default function SchoolworksProCaseStudy() {
             </p>
           </div>
           
-          <ImagePlaceholder title="Typography System" className="h-64 mb-6" />
+          <div className="px-8">
+          <Image
+            src={"/img/works/schoolworkspro/Typography.png"}
+            width={1250}
+            height={1270}
+            alt="typography"
+          />
+          </div>
           
           <div className="bg-green-50 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
@@ -295,7 +312,14 @@ export default function SchoolworksProCaseStudy() {
             </ul>
           </div>
           
-          <ImagePlaceholder title="Button System" className="h-48 mb-6" />
+          <div className="px-8">
+            <Image
+              src={"/img/works/schoolworkspro/Buttons.png"}
+              width={1220}
+              height={830}
+              alt="buttons"
+            />
+          </div>
           
           <div className="bg-purple-50 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
@@ -312,7 +336,7 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Forms */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Forms</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">Forms</h3>
           <div className="prose prose-lg max-w-none mb-8">
             <ul className="text-gray-700 space-y-2">
               <li>• Multiple states: hover, focus, typing, error, success</li>
@@ -322,7 +346,14 @@ export default function SchoolworksProCaseStudy() {
             </ul>
           </div>
           
-          <ImagePlaceholder title="Form Components" className="h-64 mb-6" />
+          <div className="h-64 mb-6">
+          <Image
+            src={"/img/works/schoolworkspro/Form.png"}
+            width={648}
+            height={1766}
+            alt="Form"
+          />
+        </div>
           
           <div className="bg-orange-50 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
@@ -339,7 +370,7 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Navigation */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Navigation</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">Navigation</h3>
           <div className="prose prose-lg max-w-none mb-8">
             <ul className="text-gray-700 space-y-2">
               <li>• <strong>Sidebar Redesign:</strong> Condensed layout to reduce clutter</li>
@@ -348,7 +379,14 @@ export default function SchoolworksProCaseStudy() {
             </ul>
           </div>
           
-          <ImagePlaceholder title="Navigation System" className="h-64 mb-6" />
+          <div className="h-64 mb-6">
+          <Image
+            src={"/img/works/schoolworkspro/Navigation.png"}
+            width={648}
+            height={1766}
+            alt="Form"
+          />
+        </div>
           
           <div className="bg-teal-50 rounded-lg p-6 mb-8">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
@@ -365,14 +403,21 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Other Components */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Other Components</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">Other Components</h3>
           <div className="prose prose-lg max-w-none mb-8">
             <p className="text-gray-700 leading-relaxed mb-6">
               Components like tables, modals, and sliders were also redesigned for consistency with the new system.
             </p>
           </div>
           
-          <ImagePlaceholder title="Additional Components" className="h-64 mb-6" />
+          <div className="h-64 mb-6">
+          <Image
+            src={"/img/works/schoolworkspro/FRAME.png"}
+            width={648}
+            height={1766}
+            alt="Form"
+          />
+        </div>
           
           <div className="bg-gray-50 rounded-lg p-6">
             <h4 className="font-bold text-gray-900 mb-3">Impact:</h4>
