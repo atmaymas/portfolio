@@ -3,7 +3,7 @@ import { worksSectionType } from "./app/lib/definitions";
 export const myWorks: worksSectionType[] = [
     {
         tags: [{tagName: "Design System", bgColor: "#d9deee", color: "#6878ac"},],
-        label: ["Schoolworkspro", "Design Systems: One", "Component at A", "Time"],
+        label: ["Establishing scalable UI", "foundations for an evolving", "EdTech platform."],
         year: "2024",
         logo: "/img/works/swp.png",
         button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/schoolworkspro", isActive: true,},
@@ -11,7 +11,7 @@ export const myWorks: worksSectionType[] = [
     },
     {
         tags: [{tagName: "UX Design", bgColor: "#dfdfdf", color: "#525665"}, {tagName: "Interface Design", bgColor: "#dfdfdf", color: "#525665"}],
-        label: ["Effortless", "eDiscovery and", "Case Management", "with CaseConnect"],
+        label: ["Streamlining legal", "workflows for Attorneys",],
         year: "2022-23",
         logo: "/img/works/ediscovery.png",
         button: {label: "Read Case Study", bgColor: "#1276c1", link: "/works/caseconnect", isActive: true,},

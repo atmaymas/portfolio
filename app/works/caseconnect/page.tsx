@@ -6,7 +6,6 @@ export default function Page() {
   return (
     <div className={`${mulish.className}`}>
       <Info />
-      <Goals />
     </div>
   );
 }
