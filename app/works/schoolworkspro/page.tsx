@@ -94,8 +94,8 @@ export default function SchoolworksProCaseStudy() {
           
           <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6">
             <blockquote className="text-gray-700 italic">
-              "I can't tell which elements are clickable anymore — everything looks the same."<br/>
-              "I waste time scrolling through menus to find what I need."
+            &quot;I can&#39;t tell which elements are clickable anymore — everything looks the same.&quot;<br/>
+            &quot;I waste time scrolling through menus to find what I need.&quot;
             </blockquote>
           </div>
           
@@ -104,7 +104,7 @@ export default function SchoolworksProCaseStudy() {
           </p>
           
           <p className="text-gray-700 leading-relaxed">
-            To solve this, I led the creation of a <strong>custom design system</strong> tailored to SchoolworksPro's needs. Rather than adopting off-the-shelf systems like Material Design—which risked diluting the brand and overcomplicating development—we built a scalable, accessible, and brand-aligned system from scratch. This not only addressed immediate usability issues but also laid the groundwork for future dashboards across finance, teaching, and student use cases.
+            To solve this, I led the creation of a <strong>custom design system</strong> tailored to SchoolworksPro&#39;s needs. Rather than adopting off-the-shelf systems like Material Design—which risked diluting the brand and overcomplicating development—we built a scalable, accessible, and brand-aligned system from scratch. This not only addressed immediate usability issues but also laid the groundwork for future dashboards across finance, teaching, and student use cases.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function SchoolworksProCaseStudy() {
         
         <div className="prose prose-lg max-w-none mb-16">
           <p className="text-gray-700 leading-relaxed mb-6">
-            As the <strong>Product Designer</strong> on a two-person design team, I led the strategy, creation, and implementation of the new design system for SchoolworksPro's Admin Dashboard. My responsibilities included:
+            As the <strong>Product Designer</strong> on a two-person design team, I led the strategy, creation, and implementation of the new design system for SchoolworksPro&#39;s Admin Dashboard. My responsibilities included:
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -173,7 +173,7 @@ export default function SchoolworksProCaseStudy() {
           </div>
           <div className="bg-white rounded-lg p-6 shadow-sm border">
             <h4 className="font-bold text-blue-900 mb-3">Buttons, Tags, and Tabs</h4>
-            <p className="text-gray-700">Visually indistinct—users couldn't tell what was interactive versus static.</p>
+            <p className="text-gray-700">Visually indistinct—users couldn&#39;t tell what was interactive versus static.</p>
           </div>
           <div className="bg-white rounded-lg p-6 shadow-sm border">
             <h4 className="font-bold text-blue-900 mb-3">Tables</h4>
@@ -183,8 +183,8 @@ export default function SchoolworksProCaseStudy() {
         
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-16">
           <blockquote className="text-gray-700 italic">
-            "Every screen looks slightly different — it feels like five different products stitched together."<br/>
-            "I had no idea that was a button — it looks like a tag."
+          &quot;Every screen looks slightly different — it feels like five different products stitched together.&quot;<br/>
+          &quot;I had no idea that was a button — it looks like a tag.&quot;
           </blockquote>
         </div>
 
@@ -206,11 +206,11 @@ export default function SchoolworksProCaseStudy() {
           </div>
           <div className="bg-white rounded-lg p-6 shadow-sm border">
             <h4 className="font-bold text-orange-600 mb-3">Development Overhead</h4>
-            <p className="text-gray-700 text-sm">Material's complexity would have introduced bloated components we didn't need—slowing implementation without delivering real user value.</p>
+            <p className="text-gray-700 text-sm">Material&#39;s complexity would have introduced bloated components we didn&#39;t need—slowing implementation without delivering real user value.</p>
           </div>
           <div className="bg-white rounded-lg p-6 shadow-sm border">
             <h4 className="font-bold text-orange-600 mb-3">Limited Flexibility</h4>
-            <p className="text-gray-700 text-sm">Our platform serves a wide range of institutions with evolving needs. We needed a system that could scale our way, not within someone else's rules.</p>
+            <p className="text-gray-700 text-sm">Our platform serves a wide range of institutions with evolving needs. We needed a system that could scale our way, not within someone else&#39;s rules.</p>
           </div>
         </div>
         
@@ -233,7 +233,7 @@ export default function SchoolworksProCaseStudy() {
               I designed the color system to support <strong>brand integrity</strong>, <strong>usability</strong>, and <strong>accessibility</strong>:
             </p>
             <ul className="text-gray-700 space-y-2 mb-6">
-              <li>• Anchored the primary and secondary colors in SchoolworksPro's visual identity</li>
+              <li>• Anchored the primary and secondary colors in SchoolworksPro&#39;s visual identity</li>
               <li>• Introduced functional UI colors (grey, red, green, orange, pink) already familiar to users</li>
               <li>• Created a <strong>900–100 scale</strong> per color for design flexibility and theming needs</li>
               <li>• Ran accessibility audits using WCAG 2.1 to ensure compliant contrast ratios across combinations</li>
@@ -329,7 +329,7 @@ export default function SchoolworksProCaseStudy() {
               <li>• Simplified dev and QA by documenting button specs in Figma</li>
             </ul>
             <blockquote className="text-gray-700 italic border-l-4 border-purple-300 pl-4">
-              "Now I always know what's clickable and what's just a label."
+            &quot;Now I always know what&#39;s clickable and what&#39;s just a label.&quot;
             </blockquote>
           </div>
         </div>
@@ -362,7 +362,7 @@ export default function SchoolworksProCaseStudy() {
               <li>• Delivered a consistent experience across all forms</li>
             </ul>
             <blockquote className="text-gray-700 italic border-l-4 border-orange-300 pl-4">
-              "We noticed fewer support tickets once the new form patterns went live."
+            &quot;We noticed fewer support tickets once the new form patterns went live.&quot;
             </blockquote>
           </div>
         </div>
@@ -395,7 +395,7 @@ export default function SchoolworksProCaseStudy() {
               <li>• Enhanced discoverability of key features</li>
             </ul>
             <blockquote className="text-gray-700 italic border-l-4 border-teal-300 pl-4">
-              "It's so much easier to find what I need now — I don't have to hunt through the sidebar anymore."
+            &quot;It&#39;s so much easier to find what I need now — I don&#39;t have to hunt through the sidebar anymore.&quot;
             </blockquote>
           </div>
         </div>
