@@ -46,7 +46,7 @@ const InsightCard: React.FC<InsightCardProps> = ({ icon, title, quote }) => (
       <span className="text-2xl mr-3">{icon}</span>
       <h4 className="font-bold text-gray-900">{title}</h4>
     </div>
-    <blockquote className="text-gray-700 italic">"{quote}"</blockquote>
+    <blockquote className="text-gray-700 italic">&quot;{quote}&quot;</blockquote>
   </div>
 );
 
@@ -213,7 +213,7 @@ export default function VRElderlyDementiaCaseStudy() {
               Many elderly individuals reported feeling disconnected from others. They expressed a deep need for emotional connection, meaningful activities, and easy-to-use tools for engagement.
             </p>
             <blockquote className="text-gray-700 italic">
-              "Sometimes I go days without talking to anyone. It would be nice to just have someone around — even virtually."
+            &quot;Sometimes I go days without talking to anyone. It would be nice to just have someone around — even virtually.&quot;
             </blockquote>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function VRElderlyDementiaCaseStudy() {
               Users found it difficult to recall steps or navigate complex UIs. This confirmed the importance of clear guidance, memory support, and low-friction interactions.
             </p>
             <blockquote className="text-gray-700 italic">
-              "I forget what I was doing halfway through… too many buttons confuse me."
+            &quot;I forget what I was doing halfway through… too many buttons confuse me.&quot;
             </blockquote>
           </div>
         </div>
@@ -234,10 +234,10 @@ export default function VRElderlyDementiaCaseStudy() {
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-left">3. Potential of VR in Reminiscence Therapy</h3>
           <div className="bg-green-50 border-l-4 border-green-400 p-6 mb-6">
             <p className="text-gray-700 leading-relaxed mb-4">
-              Academic and clinical studies supported VR's role in stimulating memory, especially when environments mirrored real or familiar places. Users showed positive emotional responses to immersive, familiar environments.
+              Academic and clinical studies supported VR&#34;s role in stimulating memory, especially when environments mirrored real or familiar places. Users showed positive emotional responses to immersive, familiar environments.
             </p>
             <blockquote className="text-gray-700 italic">
-              "I saw the beach I used to visit with my family — it made me smile and remember the smell of the sea."
+            &quot;I saw the beach I used to visit with my family — it made me smile and remember the smell of the sea.&quot;
             </blockquote>
           </div>
         </div>
@@ -364,7 +364,7 @@ export default function VRElderlyDementiaCaseStudy() {
         
         <div className="prose prose-lg max-w-none mb-8">
           <p className="text-gray-700 leading-relaxed mb-8">
-            Our final concept envisioned a VR experience where users could revisit places from their past, explore familiar environments, and interact with personal content in a calm, accessible space. While we didn't fully prototype the VR application, our research outputs and interaction models laid the groundwork for future development.
+            Our final concept envisioned a VR experience where users could revisit places from their past, explore familiar environments, and interact with personal content in a calm, accessible space. While we didn&apos;t fully prototype the VR application, our research outputs and interaction models laid the groundwork for future development.
           </p>
         </div>
         
