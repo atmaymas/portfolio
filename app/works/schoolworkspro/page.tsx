@@ -477,16 +477,16 @@ export default function SchoolworksProCaseStudy() {
 
         {/* Reflection & What's Next */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Reflection & What's Next</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Reflection & What&apos;s Next</h2>
         </div>
         
         <div className="prose prose-lg max-w-none mb-16">
           <p className="text-gray-700 leading-relaxed mb-6">
-            If I could go back, I would have initiated earlier alignment with developers and QA on component naming conventions to reduce friction during implementation. I'd also dedicate more time to usability testing on early component prototypes to validate assumptions sooner.
+            If I could go back, I would have initiated earlier alignment with developers and QA on component naming conventions to reduce friction during implementation. I&apos;d also dedicate more time to usability testing on early component prototypes to validate assumptions sooner.
           </p>
           
           <p className="text-gray-700 leading-relaxed">
-            The design system is now being actively extended to other SchoolworksPro dashboards, including Finance, Teacher, and Student experiences. Longer term, we're exploring a centralized <strong>design ops</strong> process to maintain and evolve this system across our growing product suite.
+            The design system is now being actively extended to other SchoolworksPro dashboards, including Finance, Teacher, and Student experiences. Longer term, we&apos;re exploring a centralized <strong>design ops</strong> process to maintain and evolve this system across our growing product suite.
           </p>
         </div>
 
